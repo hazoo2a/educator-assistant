@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educator Interview Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Educator Interview Assistant</h1>
+    <form id="educatorForm">
+      <label>How much time do you have for this activity?</label>
+      <input type="text" id="time" required><br>
+
+      <label>What grade(s) or age group(s) are your learners?</label>
+      <input type="text" id="grades" required><br>
+
+      <label>What is the learning environment?</label>
+      <input type="text" id="environment" required><br>
+
+      <label>How confident are you in using hands-on projects?</label>
+      <input type="text" id="confidence" required><br>
+
+      <label>Do you want to include an assessment? (Yes/No)</label>
+      <input type="text" id="assessment" required><br>
+
+      <button type="button" onclick="submitForm()">Generate</button>
+    </form>
+    <div id="results"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
